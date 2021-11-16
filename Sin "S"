@@ -1,0 +1,88 @@
+package operacionesbasicas;
+
+import javax.swing.JOptionPane;
+
+public class OperacionesBasicas {
+    public static void main(String[] args) {
+        Operaciones obj01 = new Operaciones();    
+        int m;
+        int a;
+        int b;
+        do{
+            m = Integer.parseInt(JOptionPane.showInputDialog("Seleccione operacion\n"
+                    + "1: Suma\n"
+                    + "2: Resta\n"
+                    + "3: Multiplicacion \n"
+                    + "4: Division \n"
+                    + "5: Salir\n"));
+
+            switch(m){
+                case 1:
+                    a = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 1" ));
+                    b = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 2" ));
+                    obj01.suma(a, b);
+                    break;
+                case 2:
+                    a = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 1" ));
+                    b = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 2" ));
+                    obj01.resta(a, b);
+                    break;
+                case 3:
+                    a = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 1" ));
+                    b = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 2" ));
+                    obj01.multiplicacion(a, b);
+                    break;
+                    
+                case 4:
+                    a = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 1" ));
+                    b = Integer.parseInt(JOptionPane.showInputDialog("Suma\n"
+                            + "ingrese valor 2" ));
+                    obj01.division(a, b);
+                    break;
+                    
+                case 5:
+                    JOptionPane.showMessageDialog(null, "Salio del programa", "Salida",m);
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Opción no valida", "Error",m);
+                    break;
+            }
+        }while(m!=5);    
+      
+     
+
+}
+public class Operaciones {
+    double a ;
+    double b ;
+    public double res;
+    
+    
+    public void suma (int a, int b){
+               res = a + b;
+        JOptionPane.showMessageDialog(null,a+"+"+b +"="+res); 
+    }
+    
+    public void resta (int a, int b){
+               res = a - b;
+        JOptionPane.showMessageDialog(null,a+"-"+b +"="+res); 
+    }
+    public void multiplicacion (int a, int b){
+               res = a * b;
+        JOptionPane.showMessageDialog(null,a+"*"+b +"="+res); 
+    }
+    
+    public void division (int a, int b){
+               res = a / b;
+        JOptionPane.showMessageDialog(null,a+"/"+b +"="+res); 
+    }
+}
+    }
+    
