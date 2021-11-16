@@ -1,0 +1,12 @@
+public class CD_MAL {
+    public int id;
+    public String nombre;
+    public String Cantidad ;
+
+}
+public class DVD_MAL {
+    public int id;
+    public String nombre;
+    public String Cantidad ;
+    public String Fecha_lanzamiento;
+}
