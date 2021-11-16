@@ -1,0 +1,74 @@
+package tienda;
+
+public interface DatosGenerales {
+    void id();
+    void nombre ();
+    void Cantidad ();
+    void Fecha_lanzamiento ();
+}
+_________________________________________________________________________________________________________________________________________
+
+package tienda;
+
+public interface Clasificacion {
+    Void Edad_clasificacion ();
+}
+_________________________________________________________________________________________________________________________________________
+
+package tienda;
+
+public class CD implements DatosGenerales {
+
+    @Override
+    public void id() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void nombre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void Cantidad() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void Fecha_lanzamiento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+}
+
+_________________________________________________________________________________________________________________________________________
+
+package tienda;
+
+public class DVD implements DatosGenerales, Clasificacion{
+
+    @Override
+    public void id() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void nombre() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void Cantidad() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void Fecha_lanzamiento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Void Edad_clasificacion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
