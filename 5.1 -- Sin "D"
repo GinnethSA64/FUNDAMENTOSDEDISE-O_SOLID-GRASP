@@ -1,0 +1,26 @@
+package carro;
+
+public class Carro {
+
+    private int remainingFuel;
+    private int power;
+
+    public RacingCar(final int fuel) {
+        remainingFuel = fuel;
+    }
+
+    void accelerate() {
+        power++;
+        remainingFuel--;
+    }
+public class Driver {
+     private Carro carro;
+
+    public Driver() {
+        this.carro = new Carro(100);
+    }
+
+    void increaseSpeed() {
+        this.carro.accelerate();
+    }   
+}
