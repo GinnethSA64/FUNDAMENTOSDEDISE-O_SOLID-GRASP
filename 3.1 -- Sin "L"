@@ -1,0 +1,22 @@
+class Bird {
+    void fly() {
+        System.out.println("Eating");
+    }
+    
+    void eat() {
+        System.out.println("Flying");
+    }
+}
+
+__________________________________________________________________
+
+class Duck extends Bird { 
+}
+
+__________________________________________________________________
+
+class Avestruz extends Aves {
+    void fly() {
+        throw new UnsupportedOperationException();
+    }
+}
