@@ -1,0 +1,46 @@
+package carro;
+
+public interface Car {
+    void accelerate();
+}
+
+______________________________________________________________________________________________________
+
+package carro;
+
+
+public class Conducir {
+        private Car Carro;
+
+    public Conducir(final Car Carro) {
+        this.Carro = Carro;
+    }
+
+    public void increaseSpeed() {
+        this.Carro.accelerate();
+    }
+}
+______________________________________________________________________________________________________
+
+package carro;
+
+
+public class Carro implements Car {
+    private int remainingFuel;
+    private int power;
+
+    public Carro(final int fuel) {
+        remainingFuel = fuel;
+    }
+
+    @Override
+    public void accelerate() {
+        power++;
+        remainingFuel--;
+    }
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+    
+}
